@@ -11,7 +11,7 @@
   --Cream: hsl(27, 66%, 92%);
   --Very-pale-orange: hsl(33, 100%, 98%);
   --f-normal: 1.125rem;
-  --f-large: 2.25;
+  --f-large: 2.25rem;
   --fw-normal: 400;
   --fw-large: 700;
 }
@@ -20,26 +20,65 @@ body {
   font-optical-sizing: auto;
   font-weight: var(--fw-normal);
   height: 100vh;
-  background-color: var(--Very-pale-orange);
+  background-color: var(--Cream);
+  font-size: var(--f-normal);
+}
+
+strong {
+  font-weight: var(--fw-large);
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 3fr;
+}
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.light {
+  font-size: small;
 }
 .card {
-  background-color: var(--Cream);
 }
 .bold {
   font-weight: var(--fw-large);
 }
 .first {
-  display: flex;
-  flex-direction: column;
+  background-color: var(--Soft-red);
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 15px;
+  color: var(--Very-pale-orange);
 }
 .first img {
   max-width: fit-content;
 }
+.prices {
+  background-color: var(--Very-pale-orange);
+  padding: 1rem;
+  border-radius: 15px;
+  max-width: 40rem;
+}
+.month {
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .second {
-  display: flex;
-  flex-direction: column;
+  margin-right: 7rem;
+}
+.second h1 {
+  font-size: var(--f-large);
 }
 .third {
-  display: flex;
-  flex-direction: column;
+text-align: right;
 }
